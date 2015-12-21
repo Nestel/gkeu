@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sk"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gabriel Kerekeš">
+
+        <title>Projects | Gabriel Kerekeš</title>
+
+        <!-- jquery script -->
+        <script src="js/jquery.min.js"></script>
+        <!-- bootstrap script -->
+        <script src="js/bootstrap.min.js"></script>  
+        <!-- my script -->
+        <script src="js/script.js"></script>
+
+        <!--bootstrap css file -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- font awesome css file -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <!-- main css file -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="row">
+                <div class="col-md-5 col-sm-12 text-left-responsive">
+                    <ul>
+                        <li>
+                            <a title="Home" href="index.html">
+                                Home
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Skills" href="skills.html">
+                                Skills
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12 text-center">
+                    <span id="brand"><a title="Home" href="index.html">GK</a></span>
+                </div>
+                <div class="col-md-5 col-sm-12 text-right text-right-responsive">
+                    <ul class="navbar-right">
+                        <li class="active">
+                            <a title="Projects" href="projects.html">
+                                Projects
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Contact" href="#">
+                                Contact
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="content">
+            <!--<div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h1 class="text-center no-margin">Projects I have worked on</h1>
+                    <hr>
+                </div>
+            </div>-->
+            <div class="row">
+                <div class="projects">
+                    <div class="col-md-2 col-md-offset-0 col-xs-offset-3 col-xs-6 ">
+                        <div class="row">
+                            <div id="sco2-project" class="small-project">
+                                <img src="img/snake.png">
+                                <p>Snake game</p>
+                            </div>
+                            <!--<div id="lifeclick2-project" class="small-project">  
+                                <img src="img/sco-cropped.jpg"> 
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div id="sco-project" class="col-md-4 col-xs-6 project">
+                        <img src="img/sco-cropped.jpg">
+                        <h3>SCO</h3>
+                        <p>Website</p>
+                    </div>
+
+                    <div id="lifeclick-project" class="col-md-4 col-xs-6 project">       
+                        <img src="img/lifeclick.png">
+                        <h3>LifeClick</h3>
+                        <p>Website + Android application</p>
+                    </div>
+
+                    <div class="col-md-2 col-md-offset-0 col-xs-offset-3 col-xs-6 ">
+                        <div class="row">
+                            <div id="sco2-project" class="small-project">
+                                <img src="img/minesweeper.png">
+                                <p>Minesweeper</p>
+                            </div>
+                            <!--<div id="lifeclick2-project" class="small-project">   
+                                <img src="img/lifeclick.png">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-window">
+            <div class="modal-window-content">
+                <span class="modal-window-close"><i class="fa fa-times"></i></span>
+                <h2 id="name"></h2>
+                <hr>
+
+                <p>
+                    <span class="bold">Description:</span>
+                    <span id="description"></span>
+                </p>
+
+                <p>
+                    <span class="bold">Website</span> 
+                    <span id="website"></span>
+                </p>
+
+                <p>
+                    <span class="bold">Languages used:</span> 
+                    <span id="languages"></span>
+                </p>
+
+                <p>
+                    <span class="bold">Responsibilities:</span> 
+                    <span id="responsibilities"></span>
+                </p>
+
+                <p>
+                    <span class="bold">What I learned:</span>
+                    <span id="learned"></span>
+                </p>
+
+                <p>
+                    <span class="bold">Project state:</span>
+                    <span id="state"></span>
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p></p>
+        </footer>
+    </body>
+</html>
