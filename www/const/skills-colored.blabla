@@ -161,26 +161,14 @@
                 <hr>
 
                 <p>
-                    <span class="bold">Level:</span>
-                    <span id="level"></span>
-                </p>
-
-                <p>
-                    <span class="bold">Level:</span>
-                    <span id="level"></span>
-                </p>
-
-                <p>
                     <span class="bold">Description:</span>
                     <span id="description"></span>
                 </p>
             </div>
-        </div>            
+        </div>
 
         <footer>
-            <p>
-                2016 &copy; Gabriel Kerekeš | gabriel.kerekes.ml@gmail.com
-            </p>
+            <p></p>
         </footer>
     </body>
 </html>

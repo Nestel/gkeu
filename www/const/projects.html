@@ -9,7 +9,9 @@
         <!-- jquery script -->
         <script src="js/jquery.min.js"></script>
         <!-- bootstrap script -->
-        <script src="js/bootstrap.min.js"></script>  
+        <script src="js/bootstrap.min.js"></script>
+        <!-- project objects file -->
+        <script src="js/projects.js"></script>
         <!-- my script -->
         <script src="js/script.js"></script>
 
@@ -51,7 +53,7 @@
                             </a>
                         </li>
                         <li>
-                            <a title="Contact" href="#">
+                            <a title="Contact" href="contact.html">
                                 Contact
                                 <hr class="no-margin">
                             </a>
@@ -73,7 +75,8 @@
                     <div class="col-md-2 col-md-offset-0 col-xs-offset-3 col-xs-6 ">
                         <div class="row">
                             <div id="sco2-project" class="small-project">
-                                <img src="img/snake.png">
+                                <img class="visible-no-hover" src="img/snake-bw.png">   
+                                <img class="visible-on-hover" src="img/snake.png">  
                                 <p>Snake game</p>
                             </div>
                             <!--<div id="lifeclick2-project" class="small-project">  
@@ -83,13 +86,15 @@
                     </div>
 
                     <div id="sco-project" class="col-md-4 col-xs-6 project">
-                        <img src="img/sco-cropped.jpg">
+                        <img class="visible-no-hover" src="img/sco-cropped-bw.jpg">   
+                        <img class="visible-on-hover" src="img/sco-cropped.jpg">   
                         <h3>SCO</h3>
                         <p>Website</p>
                     </div>
 
                     <div id="lifeclick-project" class="col-md-4 col-xs-6 project">       
-                        <img src="img/lifeclick.png">
+                        <img class="visible-no-hover" src="img/lifeclick-bw.jpg">
+                        <img class="visible-on-hover" src="img/lifeclick.jpg">
                         <h3>LifeClick</h3>
                         <p>Website + Android application</p>
                     </div>
@@ -97,7 +102,8 @@
                     <div class="col-md-2 col-md-offset-0 col-xs-offset-3 col-xs-6 ">
                         <div class="row">
                             <div id="sco2-project" class="small-project">
-                                <img src="img/minesweeper.png">
+                                <img class="visible-no-hover" src="img/minesweeper-bw.png">  
+                                <img class="visible-on-hover" src="img/minesweeper.png">  
                                 <p>Minesweeper</p>
                             </div>
                             <!--<div id="lifeclick2-project" class="small-project">   
@@ -109,10 +115,10 @@
             </div>
         </section>
 
-        <div class="modal-window">
+        <div id="projects-modal-window" class="modal-window">
             <div class="modal-window-content">
                 <span class="modal-window-close"><i class="fa fa-times"></i></span>
-                <h2 id="name"></h2>
+                <h2 id="name" class="text-center"></h2>
                 <hr>
 
                 <p>
@@ -121,7 +127,7 @@
                 </p>
 
                 <p>
-                    <span class="bold">Website</span> 
+                    <span class="bold">Website:</span> 
                     <span id="website"></span>
                 </p>
 
@@ -145,10 +151,12 @@
                     <span id="state"></span>
                 </p>
             </div>
-        </div>
+        </div>        
 
         <footer>
-            <p></p>
+            <p>
+                2016 &copy; Gabriel Kerekeš | gabriel.kerekes.ml@gmail.com
+            </p>
         </footer>
     </body>
 </html>

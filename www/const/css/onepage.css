@@ -5,6 +5,12 @@ darkest: #12495C, rgba(18, 73, 92, 0.8);
  */
 
 /* -----------  general css begin ----------- */
+*
+{	
+	outline: none !important;
+	font-style: none;
+}
+
 html
 {
 	height: 100%;
@@ -13,7 +19,7 @@ html
 body
 {
 	padding: 0 20px;
-	margin: 0;
+	margin-top: 10%;
 	font-family: 'Open Sans', 'Arial';
 	background: url(../img/vsDark.jpg) no-repeat center center fixed; 
 	background-color: #43D0F0;
@@ -31,6 +37,10 @@ hr
 
 nav
 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
 	width: 100%;
 	padding: 30px;
 	padding-top: 10px;
@@ -44,6 +54,32 @@ nav ul
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+nav.scrolled
+{
+	left: 0;
+	padding: 5px;
+	padding-top: 5px;
+	background-color: rgba(33, 33, 33, 0.7)
+}
+
+nav.scrolled #brand, nav.scrolled #brand a
+{
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+nav.scrolled .brand-wrapper
+{
+	padding-top: 5px;
+}
+
+nav.scrolled ul, nav.scrolled li, nav.scrolled li a
+{
+	min-height: 0px;
+	padding: 5px;
+	margin: 0;
 }
 
 nav li
@@ -109,8 +145,14 @@ nav li:hover a, nav li:hover hr
 
 section
 {
+	min-height: 100vh;
 	padding: 0 7%;
-	margin-top: 5%;
+	padding-top: 50px;
+}
+
+#intro-section
+{
+	min-height: 75vh;
 }
 /* ----------- general css end ---------- */
 
@@ -498,15 +540,12 @@ textarea
 /* ----------- contact page css end ----------- */
 footer
 {
-	position: fixed;
-	bottom: 0;
-	left: 0;
 	text-align: center;
 	width: 100%;
 	padding: 5px;
 	padding-top: 15px;
-	margin: 0;
 	border-top: 1px white solid;
+	margin-top: 30px;
 }
 
 @media screen and (min-width: 992px) {

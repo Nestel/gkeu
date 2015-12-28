@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sk"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gabriel Kerekeš">
+
+        <title>Skills | Gabriel Kerekeš</title>
+
+        <!-- jquery script -->
+        <script src="js/jquery.min.js"></script>
+        <!-- bootstrap script -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- skill objects file -->
+        <script src="js/skills.js"></script>
+        <!-- my script -->
+        <script src="js/script.js"></script>
+
+        <!--bootstrap css file -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- font awesome css file -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <!-- main css file -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="row">
+                <div class="col-md-5 col-sm-12 text-left-responsive">
+                    <ul>
+                        <li>
+                            <a title="Home" href="index.html">
+                                Home
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                       	<li>
+                            <a title="Skills" href="skills.html">
+                                Skills
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12 text-center">
+                    <span id="brand"><a href="index.html">GK</a></span>
+                </div>
+                <div class="col-md-5 col-sm-12 text-right text-right-responsive">
+                    <ul class="navbar-right">
+                        <li>
+                            <a title="Projects" href="projects.html">
+                                Projects
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a title="Contact" href="contact.html">
+                                Contact
+                                <hr class="no-margin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="content">
+            <div class="row">
+                <div class="col-sm-8">                    
+                    <h2 class="text-center">Send me an e-mail</h2>
+                    <hr class="width-75">
+
+                    <form action="mailto:gabriel.kerekes.ml@gmail.com?subject=Gabriel%20Kerekeš" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="name">
+                                    Your name *
+                                </label>
+                                <input id="name" type="text" class="form-control" name="name" required>
+                            </div>
+                            <div class="col-sm-8">                                
+                                <label for="email">
+                                    Your e-mail address *
+                                </label>
+                                <input id="email" type="email" class="form-control" name="email" required>
+                            </div>
+                        </div>
+                        <label for="content">
+                            E-mail content *
+                        </label>
+                        <textarea id="content" name="content" required class="form-control" rows="4"></textarea>
+
+                        <input type="submit" value="send" class="btn btn-nstl form-control">
+                    </form>
+                </div>
+
+                <div class="col-sm-4">             
+                    <h2 class="text-center">Get my resumé</h2>
+                    <hr>
+                    <div id="cv-image-wrapper">
+                        <a target="_blank" href="kerekesResume.pdf">
+                            <img id="cv-image" class="no-hover" src="img/cv-bw.png">
+                            <img class="on-hover" src="img/cv.png">
+                            <p>kerekesResume.pdf</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <footer>
+            <p>
+                2016 &copy; Gabriel Kerekeš | gabriel.kerekes.ml@gmail.com
+            </p>
+        </footer>
+    </body>
+</html>
