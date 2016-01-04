@@ -1,4 +1,4 @@
-var modalWindowArray = [];
+var projectsModalWindowArray = [];
 
 var scoProjectObject = 
 {
@@ -48,11 +48,50 @@ var lifeClickProjectObject =
 	state: "Website publicly available, Android application in testing phase."
 }
 
-modalWindowArray["sco-project"] = scoProjectObject;
-modalWindowArray["lifeclick-project"] = lifeClickProjectObject;
+var snakeProjectObject = 
+{
+	name: "Snake game remake",
+	description: "A relativly simple remake of the classic snake \
+					game. Made with the ncurses library, runs in the terminal/console.",
+	website: "<a target='_blank' href='https://github.com/gabrielKerekes/snake-nCurses'>GitHub</a>",
+	languages: "C",
+	responsibilities: "--",
+	learned: "ncurses, game mechanics",
+	state: "Working and available on GitHub",
+}
 
-var projects;
+var minesweeperProjectObject =
+{
+	name: "Minesweeper remake",
+	description: "A remake of the classic minesweeper game. Not keyboard \
+					controlled, requires you to enter the coordinates you \
+					wish to mark and the type of the mark.",
+	website: "<a target='_blank' href='https://github.com/gabrielKerekes/nstlMinesweeper'>GitHub</a>",
+	languages: "C",
+	responsibilities: "--",
+	learned: "game mechanics",
+	state: "Working and available on GitHub. Built quite a long time ago, \
+				so it isn't too sophisticated.",
+}
 
-$(function(){
-	projects = $(".project");	
-});
+var ticTacToeProjectObject = 
+{
+	name: "Unbeatable 3x3 TicTacToe",
+	description: "Made using the Minmax algorithm and runs in the console. The game should also be \
+					scalable, although the minmax algorithm gets too slow at \
+					larger scales, since there are too many options even \
+					for the first move at 3x3 (9! = 362880 possible outcomes), \
+					so it isn't used for larger game fields, where the AI player will \
+					play random moves.",
+	website: "<a target='_blank' href='https://github.com/gabrielKerekes/nstlMinesweeper'>GitHub</a>",
+	languages: "C++",
+	responsibilities: "--",
+	learned: "Practiced OOP in C++, minmax algorithm, some C++ algorithms",
+	state: "Wroking and available on GitHub."
+}
+
+projectsModalWindowArray["sco-project"] = scoProjectObject;
+projectsModalWindowArray["lifeclick-project"] = lifeClickProjectObject;
+projectsModalWindowArray["minesweeper-project"] = minesweeperProjectObject;
+projectsModalWindowArray["snake-project"] = snakeProjectObject;
+projectsModalWindowArray["tictactoe-project"] = ticTacToeProjectObject;

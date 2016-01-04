@@ -381,6 +381,7 @@ p#about
 	border-radius: 10px;
 	padding: 10%;
 	padding-top: 25%;
+	cursor: pointer;
 }
 
 .small-project:hover

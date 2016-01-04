@@ -3,18 +3,24 @@ var modalWindow;
 var modalWindowContent;
 var modalWindowCloseButton;
 
-var projects;
+var largeProjects;
+var mediumProjects;
+var smallProjects;
+var project;
 var skills;
 
 $(function(){
-	projects = $(".project");	
+	largeProjects = $(".large-project");
+	mediumProjects = $(".medium-project");
+	smallProjects = $(".small-project");
+	projects = $(".project");
 	skills = $(".skill");
 
 	modalWindow = $(".modal-window");
 	modalWindowContent = $(".modal-window-content");
 	modalWindowCloseButton = $(".modal-window-close");
 
-	if (projects != undefined)
+	if (largeProjects != undefined)
 	{
 		projects.each(function(){
 			$(this).click(function(){
@@ -22,9 +28,15 @@ $(function(){
 				modalWindow.show();
 			});
 		});
+
+		/*smallProjects.each(function(){
+			$(this).click(function(){
+				modalWindowShow(this);
+			});
+		});*/
 	}
 
-	if (projects != undefined)
+	if (skills != undefined)
 	{
 		skills.each(function(){
 			$(this).click(function(){
@@ -65,20 +77,57 @@ function prepareProjectsModalWindow(clickedElement)
 {
 	var id = $(clickedElement).attr("id");
 
-	modalWindowContent.find("#name").html(modalWindowArray[id].name);
-	modalWindowContent.find("#description").html(modalWindowArray[id].description);
-	modalWindowContent.find("#website").html(modalWindowArray[id].website);
-	modalWindowContent.find("#languages").html(modalWindowArray[id].languages);
-	modalWindowContent.find("#responsibilities").html(modalWindowArray[id].responsibilities);
-	modalWindowContent.find("#learned").html(modalWindowArray[id].learned);
-	modalWindowContent.find("#state").html(modalWindowArray[id].state);
+	modalWindowContent.find("#name").html(projectsModalWindowArray[id].name);
+	modalWindowContent.find("#description").html(projectsModalWindowArray[id].description);
+	modalWindowContent.find("#website").html(projectsModalWindowArray[id].website);
+	modalWindowContent.find("#languages").html(projectsModalWindowArray[id].languages);
+	modalWindowContent.find("#responsibilities").html(projectsModalWindowArray[id].responsibilities);
+	modalWindowContent.find("#learned").html(projectsModalWindowArray[id].learned);
+	modalWindowContent.find("#state").html(projectsModalWindowArray[id].state);
 }
 
 function prepareSkillsModalWindow(clickedElement)
 {
 	var id = $(clickedElement).attr("id");
+	
+	$("#name").parents("p").show();	
+	$("#level").parents("p").show();
+	$("#keywords").parents("p").show();
+	$("#description").parents("p").show();
 
-	modalWindowContent.find("#name").html(modalWindowArray[id].name);
-	modalWindowContent.find("#level").html(modalWindowArray[id].level);
-	modalWindowContent.find("#description").html(modalWindowArray[id].description);
+	if (skillsModalWindowArray[id].name != undefined)
+	{
+		modalWindowContent.find("#name").html(skillsModalWindowArray[id].name);
+	}
+	else
+	{
+		$("#name").parents("p").hide();
+	}
+
+	if (skillsModalWindowArray[id].level != undefined)
+	{
+		modalWindowContent.find("#level").html(skillsModalWindowArray[id].level);
+	}
+	else
+	{
+		$("#level").parents("p").hide();
+	}
+
+	if (skillsModalWindowArray[id].keywords != undefined)
+	{
+		modalWindowContent.find("#keywords").html(skillsModalWindowArray[id].keywords);
+	}
+	else
+	{
+		$("#keywords").parents("p").hide();
+	}
+	
+	if (skillsModalWindowArray[id].description != undefined)
+	{
+		modalWindowContent.find("#description").html(skillsModalWindowArray[id].description);
+	}
+	else
+	{
+		$("#description").parents("p").hide();
+	}
 }

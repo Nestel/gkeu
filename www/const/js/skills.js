@@ -1,4 +1,4 @@
-var modalWindowArray = [];
+var skillsModalWindowArray = [];
 
 var slovakSkillObject =
 {
@@ -22,7 +22,7 @@ var englishSkillObject =
 	description: "I learned English when I was 9 years old and living in the USA. Since\
 					then I have been learning English every year at school, watching movies,\
 					reading books, stack overflow, documentations, etc. I haven't spoken the language much,\
-					but doing so, shouldn't be a problem."
+					but doing so, isn't a problem."
 }
 
 var germanSkillObject =
@@ -38,7 +38,11 @@ var cSkillObject =
 {
 	name: "C/C++",
 	level: "Proficient",
-	description: "I have written about 20-30 smaller programs (snake, minesweeper\
+	keywords: "pointer, reference, class, virtual class/method, inheritance, \
+				encapsulation, lambdas, auto, standard library, containers, \
+				algorithms, static, const, try, catch, throw, threads, semaphore + \
+				mutex",
+	description: "I have written about 20-30 smaller programs (snake, minesweeper,\
 					sorting algorithms, trees, LAN chat, LAN battleships) in C/C++.\
 					We have studied algorithms (e.g. DFS, BFS, sorting algorithms)\
 					using C++ at school. Operating system/synchronisation algorithms were studied\
@@ -50,40 +54,60 @@ var phpSkillObject =
 {
 	name: "PHP - Nette",
 	level: "Proficient",
+	keywords: "MVC, templates, forms, database operations, user authorisation/authentification, \
+				routing, e-mail, language localisation, cookies",
 	description: "I have built three websites using the PHP framework Nette, although\
-					these websites share a fair amount of code. DOPISAT"
+					these websites share a fair amount of code. I don't have much \
+					experience with pure PHP, but I know more than just the basics. \
+					"
 }
 
 var htmlSkillObject =
 {
 	name: "HTML/CSS",
 	level: "Proficient",
+	keywords: "bootstrap - responsive",
 	description: "Although HTML/CSS are not considered programming languages by many,\
-					I think they are important to know"
+					I think they are important to know. I have made several websites from \
+					scratch and some also using templates someone else made. I also \ 
+					designed a website based on a PSD (<a href='http://www.frompsd.gabrielkerekes.eu'>website</a> -- \
+					<a href='http://www.frompsd.gabrielkerekes.eu/image.png'>image</a>)."
 }
 
 var jsSkillObject =
 {
 	name: "JS/jQuery",
 	level: "Proficient",
-	description: ""
+	keywords: "event handling, DOM, workers, objects, regex, built-in objects, \
+				event timers, anonymous functions, form validation, cookies",
+	description: "I used javascript quite a lot and I really enjoyed it, because \
+					of its simplicity. Some javascript can also be found on this \
+					website."
 }
 
 var javaSkillObject =
 {
 	name: "Java",
 	level: "Proficient",
-	description: ""
+	keywords: "encapsulation, inheritance, class, lambdas, interface, override, \
+				abstract, static, final, super, try, catch, throw, swing, JSF, \
+				facade, ORM, Android",
+	description: "I used Java for a few Android applications and a lot at school. \
+					I designed some simple GUIs, \
+					built some games with simple graphics (e.g. snake game), created \
+					a language analysing tool (cyphers course), worked with android \
+					studio (LifeClick app, bachelor thesis), built a rather simple \
+					facebook-like Java website."
 }
 
-modalWindowArray["slovak-skill"] = slovakSkillObject;
-modalWindowArray["english-skill"] = englishSkillObject;
-modalWindowArray["german-skill"] = germanSkillObject;
-modalWindowArray["c-skill"] = cSkillObject;
-modalWindowArray["php-skill"] = phpSkillObject;
-modalWindowArray["html-skill"] = htmlSkillObject;
-modalWindowArray["js-skill"] = jsSkillObject;
-modalWindowArray["java-skill"] = javaSkillObject;
+skillsModalWindowArray["slovak-skill"] = slovakSkillObject;
+skillsModalWindowArray["english-skill"] = englishSkillObject;
+skillsModalWindowArray["german-skill"] = germanSkillObject;
+skillsModalWindowArray["c-skill"] = cSkillObject;
+skillsModalWindowArray["php-skill"] = phpSkillObject;
+skillsModalWindowArray["html-skill"] = htmlSkillObject;
+skillsModalWindowArray["js-skill"] = jsSkillObject;
+skillsModalWindowArray["java-skill"] = javaSkillObject;
 
 var skills;
 
