@@ -55,7 +55,7 @@ var snakeProjectObject =
 	name: "Snake game remake",
 	description: "A relativly simple remake of the classic snake \
 					game. Made with the ncurses library, runs in the terminal/console \
-					and is controlled by the arrow buttons/WASD.",
+					and is controlled by the arrow buttons.",
 	website: "<a target='_blank' href='https://github.com/gabrielKerekes/snake-nCurses'>GitHub</a>",
 	languages: "C",
 	responsibilities: "--",
