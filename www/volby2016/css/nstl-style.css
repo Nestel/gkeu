@@ -1,0 +1,189 @@
+body {
+  padding-top: 20px;
+  border: none;
+}
+
+.navbar
+{
+	background-color: #0A50A0;
+	text-transform: uppercase;
+	height: 10px;
+	border: none;
+}
+
+.navbar-default .navbar-brand
+{
+	background-color: #094890;
+	color: rgba(255, 255, 255, 1);
+}
+
+.navbar-brand
+{
+
+}
+
+.navbar-brand a
+{
+	color: white;
+}
+
+.navbar-right
+{
+	background-color: #094890;
+}
+
+.share-button
+{
+	background-color: #C0263E;
+}
+
+.navbar-default .navbar-nav > li > a 
+{
+	color: white;
+}
+
+.navbar .navbar-nav 
+{
+    display:inline-block;
+    float:none;
+}
+
+.wide
+{
+	height: auto;
+	background-image: url('/img/headerImage.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-top: 150px;
+	padding-bottom: 20px;
+}
+
+.wide h1
+{
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+.header-small-text
+{
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+.logo 
+{
+  color:#fff;
+  text-align:center;
+}
+
+.btn-transparent 
+{
+	border: 2px solid white !important;
+	border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	color: white;
+}
+
+.wide .btn-transparent
+{
+	margin-top: 40px;
+	padding: 10px 40px 10px 40px;
+}
+
+.header-bottom-text
+{
+	margin-top: 40px;
+	font-size: 15px;
+}
+
+.header-separator
+{
+	padding: 10px 0 3px 0;
+	background-color: #094890;
+}
+
+.header-separator p 
+{
+	color: white;
+	text-transform: uppercase;
+  	text-align: center;
+}
+
+.party
+{
+	height: 600px;
+	padding: 0;
+}
+
+.party:hover
+{
+	-webkit-transform: scale(1, 1.2);
+	-moz-transform: scale(1, 1.2);
+	-ms-transform: scale(1, 1.2);
+	-o-transform: scale(1, 1.2);
+	transform: scale(1, 1.2); 
+	box-shadow: 5px 5px 5px #444;
+	z-index:999;
+}
+
+.party:hover .party-button
+{
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+
+.party:hover .party-button a
+{
+	width: 100%;
+	font-size: 12px;
+	border-radius: 0;
+	box-shadow: 5px 5px 5px #444;
+	z-index:999;
+	height: 4%;
+}
+
+.center 
+{
+	display: block;
+	margin: auto;
+}
+
+.party .upper-half
+{
+	height: 44%;
+	width: 100%;
+}
+
+.party:hover .upper-half
+{
+	height:50%;
+}
+
+.party .lower-half
+{
+	height: 50%;
+}
+
+.party:hover .lower-half
+{
+	height:48%;
+}
+
+.party-button
+{
+	display: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.dark-grey
+{
+	background-color: #999 !important;
+}
+
+.light-grey
+{
+	background-color: #ccc;
+}
