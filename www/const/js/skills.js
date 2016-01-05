@@ -69,9 +69,9 @@ var htmlSkillObject =
 	keywords: "bootstrap - responsive",
 	description: "Although HTML/CSS are not considered programming languages by many,\
 					I think they are important to know. I have made several websites from \
-					scratch and some also using templates someone else made. I also \ 
-					designed a website based on a PSD (<a href='http://www.frompsd.gabrielkerekes.eu'>website</a> -- \
-					<a href='http://www.frompsd.gabrielkerekes.eu/image.png'>image</a>)."
+					scratch and some also using templates someone else made. I also \
+					designed a website based on a PSD (<a target='_blank' href='fromPsd/index.html'>website</a> -- \
+					<a target='_blank' href='fromPsd/image.png'>image</a>)."
 }
 
 var jsSkillObject =

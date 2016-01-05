@@ -145,7 +145,7 @@ nav li:hover a, nav li:hover hr
 
 section
 {
-	min-height: 100vh;
+	min-height: 90vh;
 	padding: 0 7%;
 	padding-top: 50px;
 }
@@ -243,6 +243,16 @@ p#about
 	margin-bottom: 60%;
 }
 
+#other
+{
+	font-size: 18px;
+}
+
+#other hr
+{
+	margin-bottom: 55%;
+}
+
 .language-title
 {
 	font-size: 18px;
@@ -270,13 +280,14 @@ p#about
 {
 	list-style: none;
 	padding: 0;
+	font-size: 16px;
 }
 
 #skills-list li
 {
 	display: inline-block;
 	width: 15%;
-	padding: 5% 0;
+	padding: 6% 0;
 	border-radius: 5px;
 }
 
@@ -322,7 +333,7 @@ p#about
 
 .skill-bar-value
 {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 #cpp .skill-bar-inner
@@ -360,71 +371,88 @@ p#about
 	text-align: center;
 }
 
-.project
+.large-project
 {
-	padding: 4%;
+	padding: 5%;
 	border-radius: 20px;
 	cursor: pointer;
 	z-index: 1;
 }
 
-.project:hover
+.large-project:hover
 {
 	background-color: rgba(175, 224, 240, 0.8);
-	padding: 0;
-	padding-top: 1.5%;
+	padding: 2%;
 	color: black;
 }
 
-.small-project
+.medium-project
 {
 	border-radius: 10px;
-	padding: 10%;
-	padding-top: 25%;
+	padding: 15%;
 	cursor: pointer;
 }
 
-.small-project:hover
+.medium-project:hover
 {
 	background-color: rgba(175, 224, 240, 0.8);
-	padding: 1%;
-	padding-top: 5%;
+	padding: 5%;
 	color: black;
 }
 
-.small-project p
+.medium-project p
 {
 	margin-top: 10px;
 	font-size: 16px;
 }
 
-.project img, .small-project img
+.large-project img, .medium-project img
 {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	border-radius: 10px;
 }
 
-.project:hover .visible-no-hover, .project .visible-on-hover,
-.small-project:hover .visible-no-hover, .small-project .visible-on-hover
+.large-project:hover .visible-no-hover, .large-project .visible-on-hover,
+.medium-project:hover .visible-no-hover, .medium-project .visible-on-hover
 {
 	display: none;
 }
 
-.project .visible-no-hover, .project:hover .visible-on-hover,
-.small-project .visible-no-hover, .small-project:hover .visible-on-hover
+.large-project .visible-no-hover, .large-project:hover .visible-on-hover,
+.medium-project .visible-no-hover, .medium-project:hover .visible-on-hover
 {
 	display: block;
 }
 
-.project:hover img, .small-project:hover img
+.large-project:hover img, .medium-project:hover img
 {
 	opacity: 1;
 }
 
-.small-project img
+.medium-project img
 {
 	border-radius: 5px;
+}
+
+.small-project
+{
+	font-size: 16px;
+	border-radius: 10px;
+	padding: 2px;
+	padding-top: 9px;
+	width: 100%;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.small-project:hover
+{
+	background-color: rgba(175, 224, 240, 0.8);
+	padding: 1px;
+	padding-top: 10px;
+	font-size: 16px;
+	color: black;
 }
 
 .modal-window
@@ -490,6 +518,29 @@ input, textarea
 textarea
 {
 	resize: none;
+}
+
+#spinner, #mailResponse
+{
+	display: none;
+}
+
+#mailResponse
+{
+	margin-top: 20%;
+	font-size: 16px;
+	text-align: center;
+}
+
+#spinner
+{
+	margin-top: 20%;
+	text-align: center;
+}
+
+#spinner img
+{
+	width: 100px;
 }
 
 .btn-nstl
@@ -612,6 +663,18 @@ footer
 	#skills-list li:hover .skill-bar-wrapper
 	{
 		height: 440px;
+	}
+}
+
+@media (min-height: 1400px){
+	.skill-bar-wrapper
+	{
+		height: 600px;
+	}
+
+	#skills-list li:hover .skill-bar-wrapper
+	{
+		height: 660px;
 	}
 }
 

@@ -39,7 +39,7 @@ var lifeClickProjectObject =
 						for in the android app. The website was built by me alone, \
 						with small help from the LifeClick team. Login, registration, \
 						bug report, subscriptions, database, fiddling with the template and \
-						som other things had to be done here.",
+						some other things had to be done here.",
 	learned: "This project taught me basics of android application programming. How \
 				shared preferences work, how http requests and responses work, how \
 				the application layout in android works and a bunch of other things. \
@@ -57,7 +57,8 @@ var snakeProjectObject =
 	languages: "C",
 	responsibilities: "--",
 	learned: "ncurses, game mechanics",
-	state: "Working and available on GitHub",
+	state: "Working and available on GitHub. Built quite a long time ago, \
+				so it isn't too sophisticated.",
 }
 
 var minesweeperProjectObject =
@@ -83,11 +84,26 @@ var ticTacToeProjectObject =
 					for the first move at 3x3 (9! = 362880 possible outcomes), \
 					so it isn't used for larger game fields, where the AI player will \
 					play random moves.",
-	website: "<a target='_blank' href='https://github.com/gabrielKerekes/nstlMinesweeper'>GitHub</a>",
+	website: "<a target='_blank' href='https://github.com/gabrielKerekes/tictactoe'>GitHub</a>",
 	languages: "C++",
 	responsibilities: "--",
 	learned: "Practiced OOP in C++, minmax algorithm, some C++ algorithms",
-	state: "Wroking and available on GitHub."
+	state: "Working and available on GitHub. Built recently."
+}
+
+var rogueProjectObject = 
+{
+	name: "Rogue like game",
+	description: "Remake of the origin rogue game, where you have an area of \
+					some size and restricted vision and it is your goal to \
+					find all the treasures in a given number of steps, \
+					while having restricted vision.",
+	website: "<a target='_blank' href='https://github.com/gabrielKerekes/rogue'>GitHub</a>",
+	languages: "C++",
+	responsibilities: "--",
+	learned: "nCurses",
+	state: "Working and available on GitHub. Built quite a long time ago, \
+				so it isn't too sophisticated."
 }
 
 projectsModalWindowArray["sco-project"] = scoProjectObject;
@@ -95,3 +111,4 @@ projectsModalWindowArray["lifeclick-project"] = lifeClickProjectObject;
 projectsModalWindowArray["minesweeper-project"] = minesweeperProjectObject;
 projectsModalWindowArray["snake-project"] = snakeProjectObject;
 projectsModalWindowArray["tictactoe-project"] = ticTacToeProjectObject;
+projectsModalWindowArray["rogue-project"] = rogueProjectObject;
