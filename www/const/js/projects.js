@@ -62,6 +62,7 @@ var snakeProjectObject =
 	learned: "ncurses, game mechanics",
 	state: "Working and available on GitHub. Built quite a long time ago, \
 				so it isn't too sophisticated.",
+	image: "img/snake.png",
 }
 
 var minesweeperProjectObject =
@@ -76,6 +77,7 @@ var minesweeperProjectObject =
 	learned: "game mechanics",
 	state: "Working and available on GitHub. Built quite a long time ago, \
 				so it isn't too sophisticated.",
+	image: "img/minesweeper.png",
 }
 
 var ticTacToeProjectObject = 
@@ -91,7 +93,8 @@ var ticTacToeProjectObject =
 	languages: "C++",
 	responsibilities: "--",
 	learned: "Practiced OOP in C++, minmax algorithm, some C++ algorithms",
-	state: "Working and available on GitHub. Built recently."
+	state: "Working and available on GitHub. Built recently.",
+	image: "img/ticTacToe.png",
 }
 
 var rogueProjectObject = 
@@ -106,7 +109,8 @@ var rogueProjectObject =
 	responsibilities: "--",
 	learned: "nCurses",
 	state: "Working and available on GitHub. Built quite a long time ago, \
-				so it isn't too sophisticated."
+				so it isn't too sophisticated.",
+	image: "img/rogue.png",
 }
 
 projectsModalWindowArray["sco-project"] = scoProjectObject;

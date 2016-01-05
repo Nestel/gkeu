@@ -153,57 +153,121 @@ function prepareProjectsModalWindow(clickedElement)
 {
 	var id = $(clickedElement).attr("id");
 
-	projectsModalWindowContent.find("#name").html(projectsModalWindowArray[id].name);
-	projectsModalWindowContent.find("#description").html(projectsModalWindowArray[id].description);
-	projectsModalWindowContent.find("#website").html(projectsModalWindowArray[id].website);
-	projectsModalWindowContent.find("#languages").html(projectsModalWindowArray[id].languages);
-	projectsModalWindowContent.find("#responsibilities").html(projectsModalWindowArray[id].responsibilities);
-	projectsModalWindowContent.find("#learned").html(projectsModalWindowArray[id].learned);
-	projectsModalWindowContent.find("#state").html(projectsModalWindowArray[id].state);
+	if (projectsModalWindowArray[id].name != undefined)
+	{
+		projectsModalWindowContent.find("#project-name").html(projectsModalWindowArray[id].name);
+	}
+	else
+	{
+		$("#project-name").parents("p").hide();
+	}
+
+	if (projectsModalWindowArray[id].description != undefined)
+	{
+		projectsModalWindowContent.find("#project-description").html(projectsModalWindowArray[id].description);
+	}
+	else
+	{
+		$("#project-description").parents("p").hide();
+	}
+
+	if (projectsModalWindowArray[id].website != undefined)
+	{
+		projectsModalWindowContent.find("#project-website").html(projectsModalWindowArray[id].website);
+	}
+	else
+	{
+		$("#project-website").parents("p").hide();
+	}
+
+	if (projectsModalWindowArray[id].languages != undefined)
+	{
+		projectsModalWindowContent.find("#project-languages").html(projectsModalWindowArray[id].languages);
+	}
+	else
+	{
+		$("#project-languages").parents("p").hide();
+	}
+
+	if (projectsModalWindowArray[id].responsibilities != undefined)
+	{
+		projectsModalWindowContent.find("#project-responsibilities").html(projectsModalWindowArray[id].responsibilities);
+	}
+	else
+	{
+		$("#project-responsibilities").parents("p").hide();
+	}
+
+	if (projectsModalWindowArray[id].learned != undefined)
+	{
+		projectsModalWindowContent.find("#project-learned").html(projectsModalWindowArray[id].learned);
+	}
+	else
+	{
+		$("#project-learned").parents("p").hide();
+	}
+
+	if (projectsModalWindowArray[id].state != undefined)
+	{
+		projectsModalWindowContent.find("#project-state").html(projectsModalWindowArray[id].state);
+	}
+	else
+	{
+		$("#project-state").parents("p").hide();
+	}
+
+	if (projectsModalWindowArray[id].image != undefined)
+	{
+		projectsModalWindowContent.find("#project-image").attr("href", projectsModalWindowArray[id].image);
+	}
+	else
+	{
+		$("#project-image").parents("p").hide();
+	}
 }
 
 function prepareSkillsModalWindow(clickedElement)
 {
 	var id = $(clickedElement).attr("id");
 	
-	$("#name").parents("p").show();	
-	$("#level").parents("p").show();
-	$("#keywords").parents("p").show();
-	$("#description").parents("p").show();
+	$("#skill-name").parents("p").show();	
+	$("#skill-level").parents("p").show();
+	$("#skill-keywords").parents("p").show();
+	$("#skill-description").parents("p").show();
 
 	if (skillsModalWindowArray[id].name != undefined)
 	{
-		skillsModalWindowContent.find("#name").html(skillsModalWindowArray[id].name);
+		skillsModalWindowContent.find("#skill-name").html(skillsModalWindowArray[id].name);
 	}
 	else
 	{
-		$("#name").parents("p").hide();
+		$("#skill-name").parents("p").hide();
 	}
 
 	if (skillsModalWindowArray[id].level != undefined)
 	{
-		skillsModalWindowContent.find("#level").html(skillsModalWindowArray[id].level);
+		skillsModalWindowContent.find("#skill-level").html(skillsModalWindowArray[id].level);
 	}
 	else
 	{
-		$("#level").parents("p").hide();
+		$("#skill-level").parents("p").hide();
 	}
 
 	if (skillsModalWindowArray[id].keywords != undefined)
 	{
-		skillsModalWindowContent.find("#keywords").html(skillsModalWindowArray[id].keywords);
+		skillsModalWindowContent.find("#skill-keywords").html(skillsModalWindowArray[id].keywords);
 	}
 	else
 	{
-		$("#keywords").parents("p").hide();
+		$("#skill-keywords").parents("p").hide();
 	}
 	
 	if (skillsModalWindowArray[id].description != undefined)
 	{
-		skillsModalWindowContent.find("#description").html(skillsModalWindowArray[id].description);
+		skillsModalWindowContent.find("#skill-description").html(skillsModalWindowArray[id].description);
 	}
 	else
 	{
-		$("#description").parents("p").hide();
+		$("#skill-description").parents("p").hide();
 	}
 }
