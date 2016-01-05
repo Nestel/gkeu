@@ -22,7 +22,7 @@ var englishSkillObject =
 	description: "I learned English when I was 9 years old and living in the USA. Since\
 					then I have been learning English every year at school, watching movies,\
 					reading books, stack overflow, documentations, etc. I haven't spoken the language much,\
-					but doing so, isn't a problem."
+					but doing so, isn't much of a problem."
 }
 
 var germanSkillObject =
@@ -36,16 +36,16 @@ var germanSkillObject =
 
 var cSkillObject =
 {
-	name: "C/C++",
+	name: "C++/C",
 	level: "Proficient",
 	keywords: "pointer, reference, class, virtual class/method, inheritance, \
 				encapsulation, lambdas, auto, standard library, containers, \
 				algorithms, static, const, try, catch, throw, threads, semaphore + \
 				mutex",
 	description: "I have written about 20-30 smaller programs (snake, minesweeper,\
-					sorting algorithms, trees, LAN chat, LAN battleships) in C/C++.\
+					sorting algorithms, trees, LAN chat, LAN battleships) in C++/C.\
 					We have studied algorithms (e.g. DFS, BFS, sorting algorithms)\
-					using C++ at school. Operating system/synchronisation algorithms were studied\
+					using C++ at school. Operating system and synchronisation algorithms were studied\
 					in C. This is the language I use, when I want to create something\
 					in my free time and it was the first language I learned."
 }
@@ -69,7 +69,7 @@ var htmlSkillObject =
 	keywords: "bootstrap - responsive",
 	description: "Although HTML/CSS are not considered programming languages by many,\
 					I think they are important to know. I have made several websites from \
-					scratch and some also using templates someone else made. I also \
+					scratch and some also using premade templates. I also \
 					designed a website based on a PSD (<a target='_blank' href='fromPsd/index.html'>website</a> -- \
 					<a target='_blank' href='fromPsd/image.png'>image</a>)."
 }
@@ -80,8 +80,10 @@ var jsSkillObject =
 	level: "Proficient",
 	keywords: "event handling, DOM, workers, objects, regex, built-in objects, \
 				event timers, anonymous functions, form validation, cookies",
-	description: "I used javascript quite a lot and I really enjoyed it, because \
-					of its simplicity. Some javascript can also be found on this \
+	description: "I used Javascript quite a lot and I really enjoyed it, because \
+					of its simplicity. However, I think I don't write the best \
+					Javascript code there is, because I don't use the more complex \
+					parts of the language. Some javascript can also be found on this \
 					website."
 }
 
