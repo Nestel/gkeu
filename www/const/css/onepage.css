@@ -664,6 +664,45 @@ footer
 	{
 		width: 40%;
 	}
+
+	nav
+	{
+		left: 0;
+		padding: 5px;
+		padding-top: 5px;
+	}
+
+	nav #brand, nav #brand a
+	{
+		font-size: 30px;
+		vertical-align: middle;
+	}
+
+	nav .brand-wrapper, nav.scrolled .brand-wrapper
+	{
+		padding-top: 20px;
+	}
+
+	nav ul, nav li, nav li a
+	{
+		min-height: 0px;
+		padding: 5px;
+		margin: 0;
+	}
+
+	.navbar-right li
+	{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.navbar-left li
+	{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 @media (min-height: 750px){
