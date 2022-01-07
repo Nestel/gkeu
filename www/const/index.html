@@ -30,7 +30,7 @@
         <!-- main css file -->
         <link rel="stylesheet" type="text/css" href="css/onepage.css">
     </head>
-    <body>
+    <body class="main-body">
         <nav id="large-navbar">
             <div class="row">
                 <div class="col-md-5 col-sm-5 col-xs-5 text-left-responsive">
@@ -413,5 +413,13 @@
 
         ga('create', 'UA-72018110-1', 'auto');
         ga('send', 'pageview');*/
+        $(".main-body").hide()
+
+        function enter() {
+            $(".main-body").show()
+            $(".note-body").hide()
+        }
+        
+        $("html").append(`<body class="note-body"><div class="container" style="text-align: center"><h2>Túto stránku som vytvoril v roku 2016 ako tretiak na FEI STU a prikladal som ju k žitovopisu pri hľadaní prvej part-time práce ako junior programátor. Dnes môže poslúžiť ako príklad "prezentačného webu" pre iných juniorov. Užívaj!</h2><button class="btn btn-primary" onclick="enter()" style="font-size: 20px">Vstúpiť</button></div>`)
     </script>
 </html>
